@@ -66,7 +66,6 @@ WHERE continent IS NOT NULL
 -- Merging the COVID Deaths and Vacciniations Tables
 
 SELECT * FROM CovidDeaths2023 d
-
 JOIN CovidVaccinations2023 v
 ON d.location = v.location AND d.date = v.date
 
